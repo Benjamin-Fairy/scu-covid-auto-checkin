@@ -8,7 +8,7 @@ f.close()
 
 
 receiver = os.environ['RCV'] #要接收邮件的邮箱
-body = os.environ['BODY'] #邮件正文
+body = res #邮件正文
 filename = "" #要发送的附件
 
 yag = yagmail.SMTP(
