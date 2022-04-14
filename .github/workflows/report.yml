@@ -25,7 +25,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Start_Report
       env:
-        TITLE: ${{ secrets.TITLE }}
+        PWD: ${{ secrets.PWD }}
         RCV: ${{ secrets.RCV }}
         CAMPUS: ${{ secrets.CAMPUS }}
       run: python3 checkin.py
