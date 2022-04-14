@@ -1,7 +1,7 @@
 import yagmail
 import os
 
-f=os.popen("python3 checkin.py".'r')
+f=os.popen("python3 checkin.py",'r')
 res=f.readlines()
 f.close()
 
