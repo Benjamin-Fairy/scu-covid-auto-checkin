@@ -15,4 +15,5 @@ host = 'smtp.163.com')
  #   subject="打卡结果",#邮件标题
  #   contents=body)
 
-print(os.environ['PWD'])
+a=os.environ['PWD']
+print(a)
