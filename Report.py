@@ -2,7 +2,7 @@ import yagmail
 import os
 
 receiver = "facionia@outlook.com" #要接收邮件的邮箱
-body = "test"+os.environ['UUKEY'] #邮件正文
+body = "test"+os.environ['RCV'] #邮件正文
 filename = "" #要发送的附件
 
 yag = yagmail.SMTP(
