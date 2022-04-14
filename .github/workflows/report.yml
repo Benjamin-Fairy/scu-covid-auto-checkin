@@ -25,6 +25,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Start_Report
       env:
+        ACT: ${{ secrets.ACT }}
         PWf: ${{ secrets.PWf }}
         RCV: ${{ secrets.RCV }}
         EAI_SESS: ${{ secrets.EAI_SESS }}
