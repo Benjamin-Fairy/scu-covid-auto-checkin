@@ -27,7 +27,7 @@
 1. 用**Chrome**或**Edge**浏览器打开[四川大学微服务-健康每日报](https://wfw.scu.edu.cn/ncov/wap/default/index)
 
 2. 按F12，打开开发者工具，选中右侧上方的**Network** 
-    ![切换至Network](https://ibed.csgowiki.top/image/fig-1.png)
+    ![切换至Network](https://raw.githubusercontent.com/Benjamin-Fairy/scu-covid-auto-checkin/master/resource/728BDBA2-377C-4EDC-9FF3-0F40BFB23B3E.jpeg)
 
 3. 刷新页面，在Network选项卡中下方Name中找到**index**，在右侧**Headers**下方找到**Cookie**项，复制出其中的`eai_sess`与`UUkey`内容备用
     ![找到cookies](https://ibed.csgowiki.top/image/find-cookies.png)
