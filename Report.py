@@ -15,8 +15,12 @@ user=os.environ['ACT'],#要发送邮件的邮箱，可以自己发送给自己
 password= os.environ['PWf'],#授权码
 host = 'smtp.163.com')
 
-if "INFO" not in body:
+if "已经" in body:
+    print("已填报，不发送")
+
+else:
     yag.send(
         to=receiver,
         subject="打卡结果",#邮件标题
         contents=body)
+    
