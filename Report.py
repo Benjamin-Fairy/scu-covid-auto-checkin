@@ -1,8 +1,8 @@
 import yagmail
 import os
 
-receiver = “facionia@outlook.com” #要接收邮件的邮箱
-body = “test” #邮件正文
+receiver = "facionia@outlook.com" #要接收邮件的邮箱
+body = "test" #邮件正文
 filename = "" #要发送的附件
 
 yag = yagmail.SMTP(
