@@ -1,8 +1,13 @@
 import yagmail
 import os
 
+f=os.popen("python3 checkin.py",'r')
+res=f.readlines()
+f.close()
+
+
 receiver = os.environ['RCV'] #要接收邮件的邮箱
-body = "test"+os.environ['PWf'] #邮件正文
+body = res #邮件正文
 filename = "" #要发送的附件
 
 yag = yagmail.SMTP(
