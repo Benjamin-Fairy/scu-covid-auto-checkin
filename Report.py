@@ -11,11 +11,11 @@ body = res #邮件正文
 filename = "" #要发送的附件
 
 yag = yagmail.SMTP(
-user="testfromfairyland@163.com",#要发送邮件的邮箱，可以自己发送给自己
+user=os.environ['ACT'],#要发送邮件的邮箱，可以自己发送给自己
 password= os.environ['PWf'],#授权码
 host = 'smtp.163.com')
 
-if "已经填报" not in res:
+if "INFO" not in body:
     yag.send(
         to=receiver,
         subject="打卡结果",#邮件标题
