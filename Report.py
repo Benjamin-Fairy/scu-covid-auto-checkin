@@ -10,9 +10,9 @@ user="testfromfairyland@163.com",#要发送邮件的邮箱，可以自己发送�
 password= str(os.environ["PWD"]),#授权码
 host = 'smtp.163.com')
 
-yag.send(
-    to=receiver,
-    subject="打卡结果",#邮件标题
-    contents=body)
+#yag.send(
+#    to=receiver,
+ #   subject="打卡结果",#邮件标题
+ #   contents=body)
 
 print(os.environ["PWD"])
