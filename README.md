@@ -44,12 +44,15 @@
 
     ![找到Secrets](https://raw.githubusercontent.com/Benjamin-Fairy/scu-covid-auto-checkin/master/resource/7A23B22B-FBDA-4EA2-94D6-FB354D0C9319.png)
 
-2. 一共添加3个环境变量：
+2. 一共添加5个环境变量：
     | Name | Value |
     | ---- | ---- |
     | `EAI_SESS` | 获取的`eai_sess` |
     | `UUKEY` | 获取的`UUkey` |
     | `CAMPUS` | 所在校区，填`wangjiang`、`jiangan`或`huaxi` |
+    | `RCV` | 收取打卡结果的邮箱地址 |
+    | `ACT` | 发送打卡结果的邮箱地址 |
+    | `PWf` | 发送打卡结果的的`邮箱授权码（SMTP）` |
 
 > 现在还未提供`jiangan(江安)`与`huaxi(华西)`的地理位置模板
 ### 修改定时配置
