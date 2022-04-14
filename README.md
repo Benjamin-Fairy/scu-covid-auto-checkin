@@ -30,7 +30,7 @@
     ![切换至Network](https://raw.githubusercontent.com/Benjamin-Fairy/scu-covid-auto-checkin/master/resource/728BDBA2-377C-4EDC-9FF3-0F40BFB23B3E.jpeg)
 
 3. 刷新页面，在Network选项卡中下方Name中找到**index**，在右侧**Headers**下方找到**Cookie**项，复制出其中的`eai_sess`与`UUkey`内容备用
-    ![找到cookies](https://ibed.csgowiki.top/image/find-cookies.png)
+    ![找到cookies](https://raw.githubusercontent.com/Benjamin-Fairy/scu-covid-auto-checkin/master/resource/0C6CEDB2-BAFB-42D6-A9C1-E1A6C658801A.png)
 
     > 注意：cookie中`eai_sess`与`UUkey`的表示方式为`eai_sess=1234; UUkey=5678;`，只需要获取`=`与`;`之间的字符即可，即`1234`与`5678`。
     >
@@ -42,7 +42,7 @@
 
 1. **在你fork后的仓库里** 进入Settings -> Secrets，点击右上角的**New repository secret**
 
-    ![找到Secrets](https://ibed.csgowiki.top/image/add_secrets.png)
+    ![找到Secrets](https://raw.githubusercontent.com/Benjamin-Fairy/scu-covid-auto-checkin/master/resource/7A23B22B-FBDA-4EA2-94D6-FB354D0C9319.png)
 
 2. 一共添加3个环境变量：
     | Name | Value |
