@@ -13,7 +13,7 @@ body = res #邮件正文
 filename = "" #要发送的附件
 
 yag = yagmail.SMTP(
-user='testfromfairyland@163.com',#要发送邮件的邮箱，可以自己发送给自己
+user=os.environ['ACT'],#要发送邮件的邮箱，可以自己发送给自己
 password= os.environ['PWf'],#授权码
 host = 'smtp.163.com')
 
