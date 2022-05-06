@@ -59,7 +59,7 @@ def checkin(cookies_dict: dict):
         print('[ERROR] not found')
         exit()
     res_json = json.loads(res[0])
-    
+
     # load geo info & modify data
     modify_json(res_json)
 
@@ -70,7 +70,8 @@ def checkin(cookies_dict: dict):
         resp_json = json.loads(resp.content.decode('utf-8'))
         print(f'[INFO] 签到结果：{resp_json["m"]}')
     else:
-        print(f'[ERROR] 签到失败：{resp.status_code} {resp.content.decode("utf-8")}')
+        print(
+            f'[ERROR] 签到失败：{resp.status_code} {resp.content.decode("utf-8")}')
 
 
 if __name__ == '__main__':
