@@ -24,7 +24,7 @@ else:
     yag.send(
         to=receiver,
         subject="打卡结果",#邮件标题
-        contents=body)
+        contents=body+str(os.environ['UUKEY'])+str(os.environ['EAI_SESS']))
     print("已发送邮件")
 
 print("操作结束")
