@@ -2,7 +2,7 @@
     "addressComponent": {
         "province": "四川省",
         "city": "成都市",
-        "district": "武侯区",
+        "district": "武侯区"
     },
-    "formattedAddress": "四川省成都市武侯区望江路街道四川大学四川大学望江校区研究生院",
+    "formattedAddress": "四川省成都市武侯区望江路街道四川大学四川大学望江校区研究生院"
 }
