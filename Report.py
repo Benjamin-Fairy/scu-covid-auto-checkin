@@ -21,10 +21,10 @@ yag = yagmail.SMTP(
     # print("已填报，不发送")
 
 # else:
-    yag.send(
+yag.send(
         to=receiver,
         subject="打卡结果",  # 邮件标题
         contents=body)
-    print("已发送邮件")
+print("已发送邮件")
 
 print("操作结束")
