@@ -72,7 +72,7 @@ def checkin(cookies_dict: dict):
     else:
         print(
             f'[ERROR] 签到失败：{resp.status_code} {resp.content.decode("utf-8")}')
-    print('\n签到地点：'+str(res_json["area"]))
+    print('签到地点：'+str(res_json["area"]))
 
 if __name__ == '__main__':
     checkin(generate_cookies_dict())
