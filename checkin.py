@@ -68,11 +68,11 @@ def checkin(cookies_dict: dict):
     resp = session.post(url=url, data=res_json)
     if resp.status_code == 200:
         resp_json = json.loads(resp.content.decode('utf-8'))
-        print(f'[INFO]\n签到结果：{resp_json["m"]}\n签到地点：{res_json}')
+        print(f'[INFO]\n签到结果：{resp_json["m"]}')
     else:
         print(
             f'[ERROR] 签到失败：{resp.status_code} {resp.content.decode("utf-8")}')
-
+    print("\n签到地点：{res_json}")
 
 if __name__ == '__main__':
     checkin(generate_cookies_dict())
