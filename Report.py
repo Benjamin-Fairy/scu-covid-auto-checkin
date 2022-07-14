@@ -17,14 +17,14 @@ yag = yagmail.SMTP(
     password=os.environ['PWf'],  # 授权码
     host='smtp.163.com')
 
-# if "已经" in str(body):
-    # print("已填报，不发送")
+if "已经" in str(body):
+    print("已填报，不发送")
 
-# else:
-yag.send(
+else:
+    yag.send(
         to=receiver,
         subject="打卡结果",  # 邮件标题
         contents=body)
-print("已发送邮件")
+    print("已发送邮件")
 
 print("操作结束")
