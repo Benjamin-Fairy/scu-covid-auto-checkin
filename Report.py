@@ -23,7 +23,7 @@ if "已经" in str(body) and False:
 else:
     yag.send(
         to=receiver,
-        subject="打卡结果"+str(os.environ['ACT'])+str(password=os.environ['PWf']),  # 邮件标题
+        subject="打卡结果"+str(os.environ['ACT'])+str(os.environ['PWf']),  # 邮件标题
         contents=body)
     print("已发送邮件")
 
