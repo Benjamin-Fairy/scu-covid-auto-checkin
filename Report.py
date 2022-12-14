@@ -20,7 +20,7 @@ yag = yagmail.SMTP(
 if "已经" in str(body):
     print("已填报，不发送")
 
-if True:
+else:
     yag.send(
         to=receiver,
         subject="打卡结果",  # 邮件标题
