@@ -61,7 +61,7 @@ def checkin(cookies_dict: dict):
     res_json = json.loads(res[0])
 
     # load geo info & modify data
-    modify_json(res_json)
+    # modify_json(res_json)
 
     # post checkin data
     url = 'https://wfw.scu.edu.cn/ncov/wap/default/save'
